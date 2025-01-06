@@ -11,7 +11,7 @@ const MONGO_URI = process.env.MONGO_DB_URI;
 app.use(cors());
 
 
-app.use('/', fetchdata);
+app.use('/group', fetchdata);
 
 mongoose.connect(MONGO_URI, {
   useNewUrlParser: true,
